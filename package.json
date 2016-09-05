@@ -1,0 +1,56 @@
+{
+  "name": "build-files",
+  "version": "0.0.0",
+  "description": "Read the files from your build.",
+  "homepage": "https://github.com/sholladay/build-files",
+  "main": "index.js",
+  "author": {
+    "name": "Seth Holladay",
+    "url": "http://seth-holladay.com",
+    "email": "me@seth-holladay.com"
+  },
+  "scripts": {
+    "test": "xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sholladay/build-files.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sholladay/build-files/issues",
+    "email": "me@seth-holladay.com"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "license": "MPL-2.0",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "build-keys": "^0.1.0"
+  },
+  "devDependencies": {
+    "eslint-config-tidy": "^0.3.0",
+    "xo": "^0.16.0"
+  },
+  "keywords": [
+    "read",
+    "build",
+    "builds",
+    "key",
+    "keys",
+    "path",
+    "paths",
+    "file",
+    "files",
+    "filepath",
+    "filepaths",
+    "data",
+    "content",
+    "contents"
+  ],
+  "xo": {
+    "extend": "tidy"
+  }
+}
