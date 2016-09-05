@@ -1,6 +1,6 @@
 {
   "name": "build-files",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Read the files from your build.",
   "homepage": "https://github.com/sholladay/build-files",
   "main": "index.js",
