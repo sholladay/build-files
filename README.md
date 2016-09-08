@@ -30,6 +30,42 @@ buildFiles.latest().then((files) => {
 });
 ```
 
+## API
+
+### buildFiles.latest(option)
+
+#### option
+
+Type: `object`
+
+Configuration and known build data.
+
+##### cwd
+
+Type: `string`<br>
+Default: `process.cwd()`
+
+The parent directory of the build root.
+
+##### branch
+
+Type: `string`
+
+Read the files from the given branch name, rather than the most recently built branch.
+
+##### version
+
+Type: `string`
+
+Read the files from the given version, rather than the most recently built version of the branch.
+
+##### includeBranchLatest
+
+Type: `boolean`<br>
+Default: `true`
+
+Whether to also read the files at the `<branch>/latest` path.
+
 ## Contributing
 
 See our [contributing guidelines](https://github.com/sholladay/build-files/blob/master/CONTRIBUTING.md "The guidelines for participating in this project.") for more details.
