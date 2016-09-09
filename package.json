@@ -28,7 +28,7 @@
     "index.js"
   ],
   "dependencies": {
-    "build-keys": "^0.1.0"
+    "build-keys": "^0.2.0"
   },
   "devDependencies": {
     "eslint-config-tidy": "^0.3.0",
