@@ -22,11 +22,17 @@ Get it into your program.
 const buildFiles = require('build-files');
 ```
 
-Get a list of the files within the latest build.
+Get a list of the files within the most recent build.
 
 ```js
 buildFiles.latest().then((files) => {
     console.log('files:', files);
+    // [
+    //     {
+    //         path    : 'master/1.0.0/foo.js',
+    //         content : 'This is foo.'
+    //     }
+    // ]
 });
 ```
 
@@ -38,7 +44,7 @@ buildFiles.latest().then((files) => {
 
 Type: `object`
 
-Configuration and known build data.
+Settings and known [build data](https://github.com/sholladay/build-data).
 
 ##### cwd
 
@@ -65,6 +71,14 @@ Type: `boolean`<br>
 Default: `true`
 
 Whether to also read the files at the `<branch>/latest` path.
+
+## Related
+
+ - [build-version](https://github.com/sholladay/build-version) - Get a version for your build.
+ - [build-data](https://github.com/sholladay/build-data) - Get metadata for your build.
+ - [build-dir](https://github.com/sholladay/build-dir) - Get a place to put your build.
+ - [build-path](https://github.com/sholladay/build-path) - Get a path for the given build.
+ - [build-keys](https://github.com/sholladay/build-keys) - Get the paths of files from your build.
 
 ## Contributing
 
