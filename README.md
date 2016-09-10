@@ -74,11 +74,12 @@ Whether to also read the files at the `<branch>/latest` path.
 
 ## Related
 
- - [build-version](https://github.com/sholladay/build-version) - Get a version for your build.
- - [build-data](https://github.com/sholladay/build-data) - Get metadata for your build.
- - [build-dir](https://github.com/sholladay/build-dir) - Get a place to put your build.
- - [build-path](https://github.com/sholladay/build-path) - Get a path for the given build.
+ - [delivr](https://github.com/sholladay/delivr) - Build your code and ship it to S3.
  - [build-keys](https://github.com/sholladay/build-keys) - Get the paths of files from your build.
+ - [build-dir](https://github.com/sholladay/build-dir) - Get a place to put your build.
+ - [build-data](https://github.com/sholladay/build-data) - Get metadata for your build.
+ - [build-path](https://github.com/sholladay/build-path) - Get a path for the given build.
+ - [build-version](https://github.com/sholladay/build-version) - Get a version for your build.
 
 ## Contributing
 
