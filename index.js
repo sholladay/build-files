@@ -6,7 +6,7 @@ const buildKeys = require('build-keys');
 
 const readFile = (filePath) => {
     return new Promise((resolve, reject) => {
-        fs.readFile(filePath, 'utf8', (err, content) => {
+        fs.readFile(filePath, (err, content) => {
             if (err) {
                 reject(err);
                 return;
