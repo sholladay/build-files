@@ -18,7 +18,7 @@ const readFile = (filePath) => {
 
 const buildFiles = {};
 
-buildFiles.latest = (option) => {
+buildFiles.latest = async (option) => {
     const config = Object.assign(
         {
             includeBranchLatest : true
@@ -28,16 +28,14 @@ buildFiles.latest = (option) => {
 
     const buildRoot = path.resolve(config.cwd || '', 'build');
 
-    return buildKeys.latest(config).then((keys) => {
-        return Promise.all(keys.map((key) => {
-            return readFile(path.join(buildRoot, key)).then((content) => {
-                return {
-                    path : key,
-                    content
-                };
-            });
-        }));
-    });
+    const keys = await buildKeys.latest(config);
+
+    return Promise.all(keys.map(async (key) => {
+        return {
+            path    : key,
+            content : await readFile(path.join(buildRoot, key))
+        };
+    }));
 };
 
 module.exports = buildFiles;
