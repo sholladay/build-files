@@ -1,20 +1,11 @@
 'use strict';
 
+const { promisify } = require('util');
 const fs = require('fs');
 const path = require('path');
 const buildKeys = require('build-keys');
 
-const readFile = (filePath) => {
-    return new Promise((resolve, reject) => {
-        fs.readFile(filePath, (err, content) => {
-            if (err) {
-                reject(err);
-                return;
-            }
-            resolve(content);
-        });
-    });
-};
+const readFile = promisify(fs.readFile);
 
 const buildFiles = {};
 

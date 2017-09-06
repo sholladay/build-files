@@ -1,6 +1,6 @@
-# build-files [![Build status for build-files on Circle CI.](https://img.shields.io/circleci/project/sholladay/build-files/master.svg "Circle Build Status")](https://circleci.com/gh/sholladay/build-files "Build Files Builds")
+# build-files [![Build status for build-files](https://img.shields.io/circleci/project/sholladay/build-files/master.svg "Build Status")](https://circleci.com/gh/sholladay/build-files "Builds")
 
-> Read the files from your build.
+> Read the files from your build
 
 ## Why?
 
@@ -39,6 +39,8 @@ buildFiles.latest().then((files) => {
 ## API
 
 ### buildFiles.latest(option)
+
+Returns a `Promise<Array>` for file objects with `path` and `content` properties.
 
 #### option
 
@@ -83,16 +85,16 @@ Whether to also read the files at the `<branch>/latest` path.
 
 ## Contributing
 
-See our [contributing guidelines](https://github.com/sholladay/build-files/blob/master/CONTRIBUTING.md "The guidelines for participating in this project.") for more details.
+See our [contributing guidelines](https://github.com/sholladay/build-files/blob/master/CONTRIBUTING.md "Guidelines for participating in this project") for more details.
 
 1. [Fork it](https://github.com/sholladay/build-files/fork).
 2. Make a feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
-5. [Submit a pull request](https://github.com/sholladay/build-files/compare "Submit code to this project for review.").
+5. [Submit a pull request](https://github.com/sholladay/build-files/compare "Submit code to this project for review").
 
 ## License
 
-[MPL-2.0](https://github.com/sholladay/build-files/blob/master/LICENSE "The license for build-files.") © [Seth Holladay](http://seth-holladay.com "Author of build-files.")
+[MPL-2.0](https://github.com/sholladay/build-files/blob/master/LICENSE "License for build-files") © [Seth Holladay](https://seth-holladay.com "Author of build-files")
 
 Go make something, dang it.

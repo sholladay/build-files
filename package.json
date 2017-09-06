@@ -1,56 +1,59 @@
 {
-  "name": "build-files",
-  "version": "0.2.0",
-  "description": "Read the files from your build.",
-  "homepage": "https://github.com/sholladay/build-files",
-  "main": "index.js",
-  "author": {
-    "name": "Seth Holladay",
-    "url": "http://seth-holladay.com",
-    "email": "me@seth-holladay.com"
-  },
-  "scripts": {
-    "test": "xo"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:sholladay/build-files.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sholladay/build-files/issues",
-    "email": "me@seth-holladay.com"
-  },
-  "engines": {
-    "node": ">=6"
-  },
-  "license": "MPL-2.0",
-  "files": [
-    "index.js"
-  ],
-  "dependencies": {
-    "build-keys": "^0.2.0"
-  },
-  "devDependencies": {
-    "eslint-config-tidy": "^0.4.0",
-    "xo": "^0.17.1"
-  },
-  "keywords": [
-    "read",
-    "build",
-    "builds",
-    "key",
-    "keys",
-    "path",
-    "paths",
-    "file",
-    "files",
-    "filepath",
-    "filepaths",
-    "data",
-    "content",
-    "contents"
-  ],
-  "xo": {
-    "extend": "tidy"
-  }
+    "name": "build-files",
+    "version": "0.2.0",
+    "description": "Read the files from your build",
+    "homepage": "https://github.com/sholladay/build-files",
+    "main": "index.js",
+    "author": {
+        "name": "Seth Holladay",
+        "url": "https://seth-holladay.com",
+        "email": "me@seth-holladay.com"
+    },
+    "scripts": {
+        "test": "xo && ava"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:sholladay/build-files.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sholladay/build-files/issues",
+        "email": "me@seth-holladay.com"
+    },
+    "engines": {
+        "node": ">=8"
+    },
+    "license": "MPL-2.0",
+    "files": [
+        "index.js"
+    ],
+    "dependencies": {
+        "build-keys": "^1.0.0"
+    },
+    "devDependencies": {
+        "ava": "^0.22.0",
+        "build-dir": "^0.7.1",
+        "eslint-config-tidy": "^0.5.0",
+        "mkdirtemp": "^1.1.0",
+        "xo": "^0.18.2"
+    },
+    "keywords": [
+        "read",
+        "build",
+        "builds",
+        "key",
+        "keys",
+        "path",
+        "paths",
+        "file",
+        "files",
+        "filepath",
+        "filepaths",
+        "data",
+        "content",
+        "contents"
+    ],
+    "xo": {
+        "extend": "tidy"
+    }
 }
